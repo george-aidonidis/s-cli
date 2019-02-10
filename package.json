@@ -1,7 +1,9 @@
 {
-	"name": "s-cli",
+	"name": "@george-aidonidis/s-cli",
+	"repository": "george-aidonidis/s-cli",
 	"version": "0.1.0-alpha",
 	"license": "MIT",
+	"main": "./src/battery/index.js",
 	"scripts": {
 		"test": "jest",
 		"dev": "nodemon ./src/battery/index.js"
