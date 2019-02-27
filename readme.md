@@ -15,3 +15,15 @@ Parses info from acpi and sends them a notification through `notify-send` comman
 - Dependencies
   - acpi
   - acpitool
+
+## Contributing
+
+1. Fork it (<https://github.com/George-Aidonidis/s-cli/fork>)
+2. Create your feature branch (git checkout -b feature/fooBar)
+3. Commit your changes (git commit -am 'Add some fooBar')
+4. Push to the branch (git push origin feature/fooBar)
+5. Create a new Pull Request
+
+## License
+
+[MIT](./license) ©
