@@ -2,12 +2,14 @@ language: node_js
 node_js:
   - 'node'
 script:
-  - yarn test
+  - yarn test --collectCoverage
+  - yarn run codecov
 cache:
+  yarn: true
   directories:
     - node_modules
 deploy:
-  provider: yarn
+  provider: npm
   email: george.aidonidis@gmail.com
   api_key: $NPM_TOKEN
   on:
