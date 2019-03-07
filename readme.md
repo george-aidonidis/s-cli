@@ -1,6 +1,6 @@
 # s-cli
 
-[![Build Status](https://travis-ci.org/George-Aidonidis/s-cli.svg?branch=master)](https://travis-ci.org/George-Aidonidis/s-cli) [![codecov](https://codecov.io/gh/George-Aidonidis/s-cli/badge.svg?branch=master)](https://codecov.io/gh/George-Aidonidis/s-cli?branch=master) [![NPM version](https://img.shields.io/npm/v/@george-aidonidis/s-cli.svg?style=flat)](https://www.npmjs.com/package/@george-aidonidis/s-cli)
+[![Build Status](https://travis-ci.org/george-aidonidis/s-cli.svg?branch=master)](https://travis-ci.org/george-aidonidis/s-cli) [![codecov](https://codecov.io/gh/george-aidonidis/s-cli/badge.svg?branch=master)](https://codecov.io/gh/george-aidonidis/s-cli?branch=master) [![NPM version](https://img.shields.io/npm/v/@george-aidonidis/s-cli.svg?style=flat)](https://www.npmjs.com/package/@george-aidonidis/s-cli)
 
 Super cli 🦸
 
