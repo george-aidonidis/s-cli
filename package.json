@@ -3,16 +3,18 @@
 	"repository": "george-aidonidis/s-cli",
 	"version": "0.2.1",
 	"license": "MIT",
-	"main": "./src/battery/index.js",
+	"main": "./src/s-cli.js",
 	"scripts": {
+		"start": "node ./src/s-cli",
 		"test": "jest",
 		"codecov": "codecov",
-		"dev": "nodemon ./src/battery/index.js"
+		"dev": "nodemon ./src/s-cli"
 	},
 	"bin": {
-		"battery-info": "./src/battery/index"
+		"s-cli": "./src/s-cli"
 	},
 	"dependencies": {
+		"commander": "^2.19.0",
 		"ramda": "^0.26.1",
 		"shelljs": "^0.8.3"
 	},
