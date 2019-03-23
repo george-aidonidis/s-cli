@@ -6,6 +6,24 @@ Super cli 🦸
 
 A node js tool to help you parse 💩 from bash/sh
 
+## Usage
+
+After installing the module:
+
+```sh
+yarn global add @george-aidonidis/s-cli
+# or with npm
+npm install -g @george-aidonidis/s-cli
+```
+
+You can use like this:
+
+```sh
+s-cli # outputs help instructions
+
+s-cli -b # outputs the remaining battery by sending a notification
+```
+
 ## Battery module
 
 Parses info from acpi and sends them a notification through `notify-send` command

@@ -10,9 +10,7 @@
 		"codecov": "codecov",
 		"dev": "nodemon ./src/s-cli"
 	},
-	"bin": {
-		"s-cli": "./src/s-cli"
-	},
+	"bin": "src/s-cli.js",
 	"dependencies": {
 		"commander": "^2.19.0",
 		"ramda": "^0.26.1",
