@@ -1,9 +1,4 @@
 const {
-	getStatusOfBatteries,
-	getChargingStatus,
-	getRemainingTime
-} = require('./reporters');
-const {
 	batteriesVerbose,
 	charginBat0,
 	charginBat1,
@@ -12,6 +7,12 @@ const {
 	unknownCharge,
 	unknownChargeVerbose
 } = require('../../fixtures/battery');
+const {
+	prettyHours,
+	getStatusOfBatteries,
+	getChargingStatus,
+	getRemainingTime
+} = require('./reporters');
 
 const normalize = text => text.replace(/\s/g, '');
 
@@ -81,6 +82,22 @@ describe('Remaining time', () => {
 	it('🔌 handles the charging state (division by zero)', () => {
 		const expected = normalize(``);
 		const actual = normalize(getRemainingTime(unknownChargeVerbose));
+
+		expect(actual).toEqual(expected);
+	});
+});
+
+describe('Pretty text of hours', () => {
+	it('return hours if input is less that 1', () => {
+		const expected = 'hour';
+		const actual = prettyHours(1);
+
+		expect(actual).toEqual(expected);
+	});
+
+	it('return hours if input is more that 1', () => {
+		const expected = 'hours';
+		const actual = prettyHours(3);
 
 		expect(actual).toEqual(expected);
 	});

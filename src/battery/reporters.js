@@ -1,7 +1,8 @@
 const {ifElse, pipe, split, filter, isEmpty} = require('ramda');
 const getProp = require('./acpi-prop');
 
-const getNums = /\d+(\%)/g;
+const getNums = /\d+(%)/g;
+const prettyHours = hours => (hours > 1 ? 'hours' : 'hour');
 
 const getStatusOfBatteries = input => {
 	const arr = input.split(',');
@@ -28,13 +29,14 @@ const getRemainingTime = info => {
 
 	const totalSeconds = (remainingCharge / presentRate) * 3600;
 	const hours = Math.floor(totalSeconds / 3600);
-	const hoursText = hours > 1 ? 'hours' : 'hour';
+	const hoursText = prettyHours(hours);
 	const minutes = Math.floor((totalSeconds % 3600) / 60);
 
 	return `${hours} ${hoursText} ${minutes} minutes`;
 };
 
 module.exports = {
+	prettyHours,
 	getStatusOfBatteries,
 	getChargingStatus,
 	getRemainingTime

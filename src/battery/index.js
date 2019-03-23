@@ -13,7 +13,9 @@ const title = getChargingStatus(batteryInfo);
 const time = getRemainingTime(batteryInfoVerbose);
 const percentages = getStatusOfBatteries(batteryInfo);
 
-shell.exec(
-	`notify-send -i xfce4-battery-plugin "${title}" "${time}\n${percentages}"`
-);
-shell.exit(0);
+module.exports = () => {
+	shell.exec(
+		`notify-send -i xfce4-battery-plugin "${title}" "${time}\n${percentages}"`
+	);
+	shell.exit(0);
+};
