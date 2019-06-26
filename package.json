@@ -1,7 +1,7 @@
 {
 	"name": "@george-aidonidis/s-cli",
 	"repository": "george-aidonidis/s-cli",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"license": "MIT",
 	"main": "./src/s-cli.js",
 	"scripts": {
