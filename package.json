@@ -12,7 +12,7 @@
 	},
 	"bin": "src/s-cli.js",
 	"dependencies": {
-		"commander": "^4.0.0",
+		"commander": "^4.0.1",
 		"ramda": "^0.26.1",
 		"shelljs": "^0.8.3"
 	},
