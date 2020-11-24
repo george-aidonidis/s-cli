@@ -21,7 +21,7 @@
 		"husky": "^4.3.0",
 		"jest": "^26.5.3",
 		"lint-staged": "^10.4.0",
-		"nodemon": "^2.0.4",
+		"nodemon": "^2.0.6",
 		"xo": "^0.33.1"
 	},
 	"lint-staged": {
